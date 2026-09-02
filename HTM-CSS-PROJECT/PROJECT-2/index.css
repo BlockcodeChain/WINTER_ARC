@@ -15,7 +15,7 @@ body{
       z-index:50;
     flex-direction: column;
     justify-content: center;
-    background:linear-gradient(20deg, #4FC3E8,#b2dff6e6);
+    background:linear-gradient(to bottom, #4FC3E8,#b2dff6e6);
 }
     
 .heroheading{
@@ -56,16 +56,11 @@ body{
 }
 
 .page2{
-    z-index:50;
+   
     position: relative;
-    color:white;
-    height:100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+   
     
-    background:linear-gradient(to bottom, #70ceed,#0B4F6C);
+    background:linear-gradient(to bottom, #b2dff6e6,#0B4F6C);
 }
 .arrow{
     position: absolute;
@@ -79,14 +74,14 @@ body{
     position: absolute;
      animation:arrowleft 2s ease-in-out  infinite ;
    
-  bottom: 30%;
-    right: 20%;
+  bottom: 50%;
+    right: 60%;
 }
 .arrow2{
     position: absolute;
      animation:arrowleft 2s ease-in-out  infinite ;
 
-  bottom: 50%;
+  bottom: 30%;
     right: 10%;
 }
 
@@ -94,14 +89,14 @@ body{
      position: absolute;
      animation:arrowleft 2s ease-in-out  infinite ;
   
-  bottom:70%;
-    right: 40%;
+  bottom:5%;
+    right: 80%;
 }
 
 @keyframes arrowleft {
 
     0% {
-        transform: translateX(-200px);
+        transform: translateX(150px);
         opacity: 0;
     }
 
@@ -110,18 +105,279 @@ body{
     }
 
     100% {
-        transform: translateX(100px);
-        opacity: 1;
+        transform: translateX(-80px);
+        opacity: 0;
     }
 }
-.page2 h3{
+.subhead{
 line-height:5rem;
 font-size:3rem;
 font-weight:100;
+color:white;
 
 }
 .page2p{
     color:rgba(223, 223, 223, 0.938);
     font-size:1.2rem;
     padding:12px 0;
+}
+.page3{
+   
+    
+    position:relative;
+  
+    animation:radial 1.6s ease-in-out infinite;
+    background:linear-gradient(to bottom, #0B4F6C,#0B2F3C);
+}
+.circle{
+    position:absolute;
+
+    width:15px;
+    height:15px;
+
+    border-radius:50%;
+
+    background:#B8FF9F;
+
+    box-shadow:
+        0 0 10px #B8FF9F,
+        0 0 20px #B8FF9F,
+        0 0 40px #B8FF9F;
+
+    animation:float 3s ease-in-out infinite alternate;
+}
+.c1{
+    top:18%;
+    left:20%;
+}
+
+.c2{
+    top:25%;
+    right:15%;
+}
+
+.c3{
+    bottom:10%;
+    left:60%;
+}
+
+.c4{
+    bottom:15%;
+    right:65%;
+}
+
+.c5{
+    top:55%;
+    left:55%;
+}
+.c6{
+    top:70%;
+    right:80%;
+}
+@keyframes float{
+
+    0%{
+        transform:translateY(10PX);
+        opacity:0.6
+    }
+    50%{
+        transform:translateY(0px);
+        opacity:0.8;
+    }
+
+    100%{
+        transform:translateY(-20px);
+        opacity:0;
+    }
+
+}
+
+.page4{
+    position:relative;
+   
+    animation:radial 1.4s ease-in-out infinite;
+    background:linear-gradient(to bottom, #0B2F3C,#071B2E);
+}
+.page5{
+    
+    position:relative;
+     /* animation:moving 2s ease-in-out infinite alternate-reverse; */
+   
+    background:linear-gradient(to bottom, #071B2E,#020509);
+}
+.circle2{
+        position:absolute;
+    background:#7FE7FF;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border:1px solid white;
+    box-shadow:
+      /* x y blure spread color */
+        
+
+        /* top-left */
+        -300px -200px 10px #7FE7FF,
+
+        /* top */
+        100px -250px 15px #7FE7FF,
+
+        /* top-right */
+        350px -150px 8px #7FE7FF,
+
+        /* left */
+        -400px 50px 12px #7FE7FF,
+
+        /* right */
+        400px 100px 15px #7FE7FF,
+
+        /* bottom-left */
+        -250px 250px 10px #7FE7FF,
+
+        /* bottom */
+        50px 300px 12px #7FE7FF,
+
+        /* bottom-right */
+        300px 250px 8px #7FE7FF;
+         animation:floating 3s ease-in-out infinite alternate;
+}
+@keyframes floating{
+
+    0%{
+        /* transform:translateY(10PX); */
+        opacity:0.9;
+        scale:0.7;
+    }
+    50%{
+        /* transform:translateY(0px); */
+        opacity:0.4;
+         scale:0.2;
+    }
+
+    100%{
+        transform:rotate(50deg);
+        opacity:1;
+        scale:0.5;
+    }
+
+}
+
+.page{
+    z-index:50;
+    overflow:hidden;
+  display:flex;
+    align-items:center;
+    position:relative;
+    justify-content:center;
+    flex-direction:column;
+    min-height:100vh;
+}
+.page6{
+    
+    position:relative;
+   
+
+    background:linear-gradient(to bottom, #000000,#000000);
+}
+.circle3{
+    background:radial-gradient(
+       circle at center, transparent 70%,
+        #8acdde 0%,
+        #50abf0 50%,
+        #60bce7 75%,
+        #eeeeee 85%
+    );
+border:1px solid white;
+    width:250px;
+    height:250px;
+     border:3px solid white;
+    position:absolute;
+    top:15%;
+    left:20%;
+
+    border-radius:50%;
+
+    filter:blur(2px);
+    opacity:0.8;
+
+    box-shadow:
+        0 0 10px rgb(12, 80, 105),
+        0 0 20px rgb(12, 80, 105),
+        0 0 40px rgb(12, 80, 105);
+
+    animation:moving 5s ease-in-out infinite alternate-reverse;
+}
+@keyframes moving{
+
+    0%{
+        transform:translate(0, 0) scale(1);
+    }
+
+    50%{
+        transform:translate(400px, 100px) scale(1.6);
+    }
+
+    100%{
+        transform:translate(600px, 150px) scale(0.9);
+    }
+
+}
+.blue{
+    color:rgb(6, 176, 243);
+}
+.box{
+    color:rgb(153, 152, 152);
+    background:rgba(3, 58, 92, 0.825);
+    text-align:center;
+    padding:30px 15px;
+    border-radius:5px;
+    margin-bottom:28px;
+    width:40%;
+    margin-top:20px;
+    height:10%;
+    border:1px solid rgb(169, 223, 244);
+}
+.footer{
+    position:relative;
+  background:radial-gradient(
+    farthest-corner at 40px 40px,
+    #040404 20%,
+    #000a11 100%
+  );
+   
+}
+.circular{
+    position:absolute;
+    z-index:-1;
+    filter:blur(9px);
+    width:50%;
+    height:50%;
+    background: linear-gradient(to top, #040404, #091822);
+    border-radius:100%;
+    border:1px solid rgb(169, 223, 244);
+}
+.btn{
+    text-align:center;
+    color:rgb(73, 167, 218);
+    text-decoration:none;
+    width:25%;
+    height:10%;
+    padding:15px 12px;
+    margin-top:15px;
+    font-size:1.2rem;
+    border:1px solid rgb(125, 189, 229);
+    border-radius:50px;
+    
+}
+.btn:hover{
+    background-color:rgb(73, 167, 218);
+    color:white;
+    cursor:pointer;
+}
+.lastline{
+    position: absolute;
+    bottom: 10px;
+    font-size: 1rem;  
+    color:rgb(230, 231, 231);
+
 }
