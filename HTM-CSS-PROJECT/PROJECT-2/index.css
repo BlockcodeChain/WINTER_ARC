@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height:100vh;
+ 
+}
+.hero{
+    height:100vh;
+    display: flex;
+    align-items: center;
+      z-index:50;
+    flex-direction: column;
+    justify-content: center;
+    background:linear-gradient(20deg, #4FC3E8,#b2dff6e6);
+}
+    
+.heroheading{
+    color:rgba(90, 89, 89, 0.914);
+    letter-spacing:2.5px;
+    text-align: center;
+    font-weight:100;
+ 
+}
+.hero h3{
+    font-size:3rem;
+     line-height: 5rem;
+     padding:12px 0;
+     text-align: center;
+     font-weight:100;
+     
+
+}
+.hero .foot {
+    position: absolute;
+    bottom: 30px;
+
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: rgb(94, 92, 92);
+
+    animation: scrollDown 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+.page2{
+    z-index:50;
+    position: relative;
+    color:white;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    background:linear-gradient(to bottom, #70ceed,#0B4F6C);
+}
+.arrow{
+    position: absolute;
+     animation:arrowleft 2s ease-in-out  infinite ;
+     color:rgb(223, 223, 223);
+     font-size:2rem;
+  
+}
+
+.arrow1{
+    position: absolute;
+     animation:arrowleft 2s ease-in-out  infinite ;
+   
+  bottom: 30%;
+    right: 20%;
+}
+.arrow2{
+    position: absolute;
+     animation:arrowleft 2s ease-in-out  infinite ;
+
+  bottom: 50%;
+    right: 10%;
+}
+
+.arrow3{
+     position: absolute;
+     animation:arrowleft 2s ease-in-out  infinite ;
+  
+  bottom:70%;
+    right: 40%;
+}
+
+@keyframes arrowleft {
+
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100px);
+        opacity: 1;
+    }
+}
+.page2 h3{
+line-height:5rem;
+font-size:3rem;
+font-weight:100;
+
+}
+.page2p{
+    color:rgba(223, 223, 223, 0.938);
+    font-size:1.2rem;
+    padding:12px 0;
+}
