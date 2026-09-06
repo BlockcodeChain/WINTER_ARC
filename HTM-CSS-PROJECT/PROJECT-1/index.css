@@ -5,3 +5,18 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.grid{
+  display:grid;
+  padding:10px 40px;
+   gap:30px;
+     text-align: center;
+  grid-template-columns: 400px 500px 800px;
+  grid-template-rows:200px 300px 300px;
+   background-color: rgb(119, 114, 114);
+}
+.box1 ,.box2, .box3, .box4, .box5, .box6 {
+  width:50%;
+  height:100%;
+
+  background-color: rgb(186, 239, 153);
+}
